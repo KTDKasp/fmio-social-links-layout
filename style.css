@@ -101,6 +101,7 @@ main {
   border-radius: 8px;
   font-weight: 700;
   transition: background-color 0.15s ease;
+  cursor: pointer;
 }
 
 .socials__button:hover {
