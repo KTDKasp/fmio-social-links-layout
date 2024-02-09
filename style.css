@@ -17,10 +17,7 @@
   padding: 0;
   list-style: none;
   outline: none;
-  @font-face {
-    font-family: "Inter", sans-serif;
-    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
-  }
+  font-family: "Inter", sans-serif;
 }
 
 img,
@@ -54,31 +51,43 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 23rem;
+  width: 23rem;
   background-color: var(--dark-grey-content);
   border-radius: 10px;
-  padding: 35px;
+  padding: 36px;
 }
 
 .section__image {
-  width: 150px;
-  height: 150px;
+  width: 85px;
+  aspect-ratio: 1;
   border-radius: 50%;
+  margin-bottom: 29px;
+}
+
+.section__text h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .section__text h2 {
   color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 25px;
 }
 
 .section__text p {
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .socials__block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 15px;
 }
 
@@ -87,8 +96,25 @@ main {
   background-color: var(--grey-button);
   border: none;
   color: var(--white);
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background-color 0.15s ease;
+}
+
+.socials__button:hover {
+  background-color: hsla(0, 0%, 26%, 0.91);
 }
 
 .socials__button:active {
   background-color: var(--green);
+  color: var(--off-black-body);
+}
+
+@media (max-width: 25rem) {
+  .content {
+    padding: 24px;
+    margin: 0 24px;
+  }
 }
